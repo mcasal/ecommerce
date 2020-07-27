@@ -5,30 +5,241 @@
     <meta name="author" content="Marta Casal">
     <meta name="description" content="Turisme local per l'Alt Pirineu i Aran">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
     <link rel="stylesheet" href="css/estils.css">
+
     <title>Turisme APA</title>
 </head>
 <body>
     <div class="container">
         <header>
-            <div class="lang">
-                <ul>
+            <a href="#"><img src="https://via.placeholder.com/200x90?text=LOGO" alt="logo"></a>
+            <div class="nav-wrap">
+                <ul class="nav-lang">
                     <li>CAT</li>
                     <li>ESP</li>
                     <li>ENG</li>
                     <li>FR</li>
                 </ul>
+                <nav class="main-nav">
+                    <ul>
+                        <li>
+                            <a href="#">Pack</a>
+                        </li>
+                        <li>
+                            <a href="#">Destinacions</a>
+                        </li>
+                        <li>
+                            <a href="#">Destacats</a>
+                        </li>
+                        <li>
+                            <a href="#">Qui som?</a>
+                        </li>
+                        <li>
+                            <a href="#">Contacte</a>
+                        </li>
+                        <li>
+                            <a href="#">Accedeix</a>
+                        </li>
+                        <form action="#">
+                            <input type="search" name="buscador" id="buscador">
+                            <button type="submit"><i class="fas fa-search"></i></button>
+                        </form>
+                    </ul>
+                </nav>
             </div>
-            <nav>
-                <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-            </nav>
         </header>
+        <main>
+            <section class="slider">
+                <img src="https://picsum.photos/1000/480" alt="Fotografia random slider">
+                <h2>Text display</h2>
+                <h3>Subtext display</h3>
+            </section>
+            <section class="search-bar">
+                <form action="#" method="POST" class="main-search-bar" autocomplete="off">
+                    <select name="buscaDesti" id="buscaDesti" class="form-group">
+                        <option value="totesDesti">Totes les comarques</option>
+                        <option value="pjDesti">Pallars Jussà</option>
+                        <option value="psDesti">Pallars Sobirà</option>
+                        <option value="arDesti">Alta Ribagorça</option>
+                        <option value="auDesti">Alt Urgell</option>
+                        <option value="vaDesti">Vall d'Aran</option>
+                        <option value="cDesti">Cerdanya</option>
+                    </select>
+                    <input type="number" min="1" name="buscaNumPers" id="buscaNumPers" class="form-group" size="15" required>
+                    <input type="date" name="buscaDates" id="buscaDates" class="form-group" required>
+                    <select name="buscaActivitat" id="buscaActivitat" class="form-group">
+                        <option value="totesActivitats">Totes les activitats</option>
+                        <option value="buscaGastronomia">Gastronomia</option>
+                        <option value="buscaEsport">Esport</option>
+                        <option value="buscaCultura">Cultura</option>
+                        <option value="buscaAllotjament">Allotjament</option>
+                    </select>
+                    <button type="submit">Buscar</button>
+                </form>
+            </section>
+            <section class="packs">
+                <h2>Packs predefinits</h2>
+                <div class="pack-wrap">
+                    <article class="pack__predef">
+                        <img src="https://picsum.photos/600/250" alt="imatge random">
+                        <h3>Pack predefinit 1</h3>
+                        <div class="cta">
+                            <i class="fas fa-heart"></i>
+                            <a href="#">VEURE</a>
+                            <a href="#">AFEGIR</a>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi sapiente adipisci modi voluptas, repellendus ipsam minima at animi obcaecati eaque ipsum harum aperiam maiores! Ipsam sit, a temporibus voluptas ipsa totam itaque minima, excepturi ea quam eius ut aliquid laboriosam, hic voluptates necessitatibus molestias. Dolores?</p>
+                    </article>
+                    <article class="pack__predef">
+                        <img src="http://lorempixel.com/600/250/nature" alt="imatge random">
+                        <h3>Pack predefinit 2</h3>
+                        <div class="cta">
+                            <i class="fas fa-heart"></i>
+                            <a href="#">VEURE</a>
+                            <a href="#">AFEGIR</a>
+                        </div>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis a at culpa incidunt quo, illum tenetur mollitia fugit dicta rem perspiciatis eligendi tempore vero dignissimos.</p>
+                    </article>
+                </div>
+            </section>
+            <section class="activitats">
+                <h2>Activitats destacades</h2>
+                <div class="activitats-wrap">
+                    <div class="destacat-wrap">
+                        <article class="main-destacat">
+                            <img src="https://picsum.photos/550/300" alt="imatge random">
+                            <div class="main-destacat-body">
+                                <h3>Destacat 1</h3>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo, dolores atque libero excepturi illum amet.</p>
+                                <a href="#" target="_blank">Veure'n més <i class="fas fa-angle-double-right"></i></a>
+                            </div>
+                        </article>
+                        <article class="destacat">
+                            <img src="http://lorempixel.com/255/180/nature" alt="imatge random">
+                            <div class="destacat-body">
+                                <h3>Destacat 2</h3>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo, dolores atque libero excepturi illum amet.</p>
+                                <a href="#" target="_blank">Veure'n més <i class="fas fa-angle-double-right"></i></a>
+                            </div>
+                        </article>
+                        <article class="destacat">
+                            <img src="https://picsum.photos/255/180" alt="imatge random">
+                            <div class="destacat-body">
+                                <h3>Destacat 3</h3>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo, dolores atque libero excepturi illum amet.</p>
+                                <a href="#" target="_blank">Veure'n més <i class="fas fa-angle-double-right"></i></a>
+                            </div>
+                        </article>
+                        <article class="destacat">
+                            <img src="http://lorempixel.com/255/180/nature" alt="imatge random">
+                            <div class="destacat-body">
+                                <h3>Destacat 4</h3>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo, dolores atque libero excepturi illum amet.</p>
+                                <a href="#" target="_blank">Veure'n més <i class="fas fa-angle-double-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <aside class="banner">
+                        <img src="https://via.placeholder.com/300x750?text=BANNER" alt="publicitat">
+                    </aside>
+                </div>
+            </section>
+            <section class="destinacions">
+                <div class="destinacio-cards">
+                    <a href="#">
+                        <i class="far fa-arrow-alt-circle-left"></i>
+                    </a>
+                    <div class="card">
+                        <h2>Destinació 1</h2>
+                        <div class="card-body">
+                            <img src="https://picsum.photos/255/350" alt="imatge random">
+                            <p class="card-heading">Lorem ipsum dolor sit.</p>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat omnis saepe sapiente sed dolor obcaecati?</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h2>Destinació 2</h2>
+                        <div class="card-body">
+                            <img src="http://lorempixel.com/255/350/nature" alt="imatge random">
+                            <p class="card-heading">Lorem ipsum dolor sit.</p>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis incidunt nobis repellendus, distinctio eaque mollitia.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h2>Destinació 3</h2>
+                        <div class="card-body">
+                            <img src="https://picsum.photos/255/350" alt="imatge random">
+                            <p class="card-heading">Lorem ipsum dolor sit.</p>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed quos recusandae voluptatem? Aliquam, minima nisi.</p>
+                        </div>
+                    </div>
+                    <a href="#">
+                        <i class="far fa-arrow-alt-circle-right"></i>
+                    </a>
+                </div>
+            </section>
+            <section class="newsletter">
+                <h2>Newsletter</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem placeat odio quasi, natus deleniti enim?</p>
+                <form action="#" id="subscribe-newsletter">
+                    <input type="mail" name="newsMail" id="newsMail" placeholder="Introdueix el teu email" size="50" required>
+                    <button type="submit">Subscriure's</button>
+                </form>
+            </section>
+        </main>
+        <footer>
+            <div class="footer-wrap">
+                <div class="footer-column">
+                    <h4>Footer 1</h4>
+                    <ul>
+                        <li>Contingut 1</li>
+                        <li>Contingut 2</li>
+                        <li>Contingut 3</li>
+                        <li>Contingut 4</li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Footer 2</h4>
+                    <ul>
+                        <li>Contingut 1</li>
+                        <li>Contingut 2</li>
+                        <li>Contingut 3</li>
+                        <li>Contingut 4</li>
+                        <li>Contingut 5</li>
+                        <li>Contingut 6</li>
+                        <li>Contingut 7</li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Footer 3</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium error, provident eaque nihil ut voluptas quo, rem assumenda magni cupiditate sed iste labore maxime ab nisi adipisci animi recusandae. Nam tempore corrupti nihil fugiat rem?</p>
+                    <ul class="footer-xxss">
+                        <li>
+                            <a href="http://www.twitter.com">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.instagram.com">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.facebook.com">
+                                <i class="fab fa-facebook-square"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-logos">
+                    <img src="https://via.placeholder.com/125x35?text=LOGO" alt="logo empresa">
+                    <img src="https://via.placeholder.com/125x35?text=LOGO" alt="logo empresa">
+                </div>
+            </div>
+            <p class="copyright">&copy; 2020 Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+        </footer>
     </div>
 </body>
 </html>

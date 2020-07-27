@@ -1,0 +1,472 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Recursive:wght@300;700&display=swap');
+
+/*
+#ff99c8
+#fcf6bd
+#d0f4de
+#a9def9
+#e4c1f9
+*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f0f2f3;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+/***** HEADER *****/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+    .nav-wrap {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+        .nav-wrap ul {
+            align-self: flex-end;
+        }
+
+
+        .nav-wrap li {
+            padding: 15px;
+        }
+
+        .nav-wrap form {
+            padding: 15px;
+        }
+
+
+    .nav-lang {
+        font-size: 12px;
+        font-family: sans-serif;
+        display: flex;
+    }
+        .nav-lang li {
+            font-family: 'Open Sans', sans-serif;
+            cursor: pointer;
+        }
+
+            .nav-lang li:last-of-type {
+                margin-right: 35px;
+            }
+
+            .nav-lang li:hover {
+                color: #9DB4C0;
+            }
+
+    .main-nav {
+        padding: 9px 25px;
+    }
+        .main-nav ul {
+            display: flex;
+            align-items: center;
+        }
+
+        .main-nav ul li {
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        .main-nav a {
+            color: #253237;
+            padding: 5px 10px;
+        }
+            .main-nav a:hover {
+                background-color: #9DB4C0;
+                opacity: 0.8;
+                padding: 5px 10px;
+                border-radius: 20px;
+            }
+
+        .main-nav form input {
+            border: 1px solid #ccc;
+            border-radius: 25px;
+            padding: 5px 10px;
+        }
+
+        .main-nav form button {
+            border: none;
+            padding: 5px 15px;
+            border-radius: 25px;
+            cursor: pointer;
+            background-color: #9DB4C0;
+        }
+            .main-nav form button:hover {
+                background-color: #74848d;
+            }
+
+/****** SECCIÓ 1 - SLIDER ******/
+
+.slider{
+    margin-top: 15px;
+    position: relative;
+}
+    .slider h2 {
+        font-family: 'Recursive', sans-serif;
+        font-weight: 700;
+        font-size: 72px;
+        color: #E0FBFC;
+        position: absolute;
+        bottom: 350px;
+        left: 65px;
+    }
+
+    .slider h3 {
+        font-family: 'Recursive', sans-serif;
+        font-weight: 700;
+        font-size: 36px;
+        color: #E0FBFC;
+        position: absolute;
+        bottom: 300px;
+        left: 65px;
+    }
+
+    .slider img {
+        width: 100%;
+    }
+
+/***** BUSCARDOR ******/
+
+.search-bar {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    .main-search-bar {
+        padding: 35px;
+        background-color: silver;
+        opacity: 0.7;
+    }
+
+    .form-group {
+        height: 35px;
+        border: 1px solid #ccc;
+        padding: 10px 5px;
+        vertical-align: middle;
+        margin-right: 15px;
+    }
+    .main-search-bar button {
+        border: none;
+        cursor: pointer;
+        padding: 10px 35px;
+        transition: all 0.3s ease 0s;
+        background-color: #9DB4C0;
+    }
+    .main-search-bar button:hover {
+            background-color: #74848d;
+            color: floralwhite;
+        }
+
+/***** SECCIÓ 2 - PACKS *****/
+
+.packs {
+    background-color: #d7e7e7;
+}
+    .packs h2 {
+        font-family: 'Recursive', sans-serif;
+        font-weight: 700;
+        font-size: 24px;
+        color: #253237;
+        padding: 25px;
+    }
+
+    .pack-wrap {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .pack__predef {
+        margin: 0 25px 25px 25px;
+        border: 1px solid #ccc;
+        flex: 1 1 50%
+    }
+
+    .pack__predef img {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .pack__predef h3 {
+        font-family: 'Recursive', sans-serif;
+        font-weight: 300;
+        padding-left: 25px;
+    }
+
+    .pack__predef p {
+        padding: 0 15px 25px 25px;
+    }
+        .cta {
+            padding: 25px;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .cta i {
+            margin-right: auto;
+        }
+
+        .cta a {
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 700;
+            color: #253237;
+            margin-left: 35px;
+        }
+
+        .cta a:hover {
+            background-color: darkolivegreen;
+        }
+
+/***** SECCIÓ 3 - ACTIVITATS *****/
+
+.activitats {
+    margin-top: 65px;
+}
+    .activitats h2 {
+        font-family: 'Recursive', sans-serif;
+        font-weight: 700;
+        font-size: 24px;
+        padding: 25px;
+    }
+    
+    .activitats-wrap {
+        display: flex;
+    }
+        .destacat-wrap {
+            display: flex;
+            flex-wrap: wrap;
+        }
+            
+            .main-destacat {
+                margin: 25px;
+                flex-basis: 100%;
+                display: flex;
+                border: 1px solid #ccc;
+            }
+
+                .main-destacat-body {
+                    margin: 25px 0 25px 25px;
+                }
+
+                .main-destacat-body h3 {
+                    font-family: 'Recursive', sans-serif;
+                    font-weight: 300;
+                }
+
+                .main-destacat-body p {
+                    padding: 15px 25px 95px 0;
+                }
+
+                .main-destacat-body a {
+                    font-family: 'Open Sans', sans-serif;
+                    font-weight: 700;
+                    color: #253237;
+                }
+        
+            .destacat {
+                width: 28%;
+                margin: 25px;
+                border: 1px solid #ccc;
+            }
+
+                .destacat img {
+                    width: 100%;
+                }
+
+                .destacat-body {
+                    padding: 15px;
+                }
+                    .destacat-body h3{
+                        font-family: 'Recursive', sans-serif;
+                        font-weight: 300;
+                    }
+
+                    .destacat-body p{
+                        padding: 15px 0 85px;
+                    }
+
+                    .destacat-body a{
+                        font-family: 'Open Sans', sans-serif;
+                        font-weight: 700;
+                        color: #253237;
+                    }
+
+        .banner {
+            align-self: center; 
+        }
+
+/**** SECCIÓ 4 - DESTINACIONS *****/
+
+.destinacions {
+    margin: auto;
+    padding: 125px 65px;
+}
+    .destinacio-cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+        .destinacio-cards a {
+            font-size: 36px;
+            color: #253237;
+        }
+
+        .card h2 {
+            font-family: 'Recursive', sans-serif;
+            font-weight: 700;
+            padding-left: 15px;
+            margin-bottom: 15px;
+        }
+            .card-body {
+                position: relative;
+            }
+
+                .card-body img {
+                    width: 100%;
+                    opacity: 0.8;
+                }
+                .card-heading {
+                    font-family: 'Recursive', sans-serif;
+                    font-weight: 700;
+                    color: seashell;
+                    width: 200px;
+                    font-size: 18px;
+                    position: absolute;
+                    top: 15px;
+                    left: 15px;
+                }
+
+                .card-text {
+                    font-weight: 400;
+                    color: seashell;
+                    width: 230px;
+                    position: absolute;
+                    bottom: 15px;
+                    left: 15px;
+                }
+
+/**** SECCIÓ 5 - NEWSLETTER ****/
+
+.newsletter {
+    height: 150px;
+    padding-left: 35px;
+    font-family: 'Recursive', sans-serif;
+    font-weight: 300;
+    background-color: #d7e7e7;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+    .newsletter p {
+        padding: 0 45px;
+        width: 40%;
+        line-height: 25px;
+    }
+    .newsletter input {
+        border: 1px solid #ccc;
+        padding: 10px 25px;
+    }
+    .newsletter button {
+        border: none;
+        cursor: pointer;
+        padding: 10px 25px;
+        transition: all 0.3s ease 0s;
+        background-color: #9DB4C0;
+    }
+        .newsletter button:hover {
+            background-color: #74848d;
+            color: floralwhite;
+        }
+
+/***** FOOTER *****/
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: #C2DFE3;
+    margin-top: 25px;
+}
+    .footer-wrap {
+        width: 85%;
+        margin-top: 25px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+        .footer-column {
+            width: 33%;
+            padding: 25px;
+        }
+            .footer-column h4 {
+                font-family: 'Recursive', sans-serif;
+                font-weight: 700;
+                margin-bottom: 18px;
+                text-transform: uppercase;
+            }
+
+            .footer-column ul li {
+                font-family: 'Open Sans', sans-serif;
+                font-weight: 400;
+                margin-bottom: 8px;
+                font-size: 12px;
+            }
+
+            .footer-column p {
+                font-size: 12px;
+                line-height: 18px;
+            }
+
+        .footer-xxss {
+            display: flex;
+        }
+            .footer-xxss li {
+                margin-right: 12px;
+                margin-top: 5px;
+            }
+                .footer-xxss li a {
+                    font-size: 16px;
+                    padding-right: 5px;
+                    color: #253237;
+                }
+
+        .footer-logos {
+            flex-basis: 100%;
+            display: flex;
+            justify-content: flex-end;
+            padding-bottom: 10px;
+        }
+
+            .footer-logos img {
+                margin-left: 15px;
+            }
+
+    .copyright {
+        flex-basis: 100%;
+        text-align: center;
+        font-size: 12px;
+        background-color: floralwhite;
+        padding: 15px;
+    }
